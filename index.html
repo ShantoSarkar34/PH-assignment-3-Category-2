@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- tailwind css  -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-     <!-- font awesome  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Assignment 3</title>
-</head>
-<body>
+  </head>
+  <body class="bg-[#FDFDFC] sora_font">
     <!-- header section start  -->
-    <header class="bg-gray-400 w-full fixed z-50 py-7">
-        <section class="container mx-auto px-4">
-            <div class="flex items-center justify-between">
-                <!--  header logo  -->
-                <div>
-                    <p>logo</p>
-                </div>
-                <!-- header menu  -->
-                 <div class="hidden lg:block">
-                     <div class="flex items-center gap-14">
-                        <a href="#">Home</a>
-                        <a href="#">Home</a>
-                        <a href="#">Home</a>
-                        <a href="#">Home</a>
-                     </div>
-                 </div>
-                 <!-- header button  -->
-                  <div>
-                    <button>Sign In</button>
-                  </div>
-
-
+    <header
+      class="w-full fixed z-50 py-[12px] lg:py-[24px] border-b border-[#179800] lg:border-none"
+    >
+      <section class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+          <!--  header logo  -->
+          <div>
+            <a href="/" class="hidden lg:block">
+              <img src="./c2-assets/logo-header.png" alt="header logo" />
+            </a>
+            <a href="/" class="lg:hidden block">
+              <img src="./c2-assets/logo_small.png" alt="header logo" />
+            </a>
+          </div>
+          <!-- header menu  -->
+          <div class="hidden lg:block">
+            <div class="flex items-center gap-14">
+              <a
+                href="#"
+                class="text-[20px] hover:text-[#179800] transition-all duration-200"
+                >Product</a
+              >
+              <a
+                href="#"
+                class="text-[20px] hover:text-[#179800] transition-all duration-200"
+                >Services</a
+              >
+              <a
+                href="#"
+                class="text-[20px] hover:text-[#179800] transition-all duration-200"
+                >Contact Us</a
+              >
             </div>
+          </div>
 
-        </section>
+          <!-- header menu icon for small device -->
+          <div class="block lg:hidden">
+            <i class="fa-solid fa-bars text-2xl text-[#179800]"></i>
+          </div>
+          <!-- header button and icons for large device  -->
+          <div class="hidden lg:block">
+            <div class="flex items-center gap-[24px]">
+              <!-- icons  -->
+              <div class="flex items-center gap-[24px]">
+                <i
+                  class="fa-solid fa-magnifying-glass text-2xl cursor-pointer hover:text-[#179800] transition-all duration-200"
+                ></i>
+                <i
+                  class="fa-solid fa-cart-shopping text-2xl cursor-pointer hover:text-[#179800] transition-all duration-200"
+                ></i>
+              </div>
+              <!-- button  -->
+              <div class="flex items-center gap-[12px]">
+                <button
+                  class="border-1 border-[#179800] px-[30px] py-[10px] text-[20px] rounded-[8px] cursor-pointer hover:text-white hover:bg-[#179800] transition-all duration-300"
+                >
+                  Login
+                </button>
+                <button
+                  class="border-1 border-[#179800] px-[30px] py-[10px] text-[20px] rounded-[8px] cursor-pointer text-white bg-[#179800] hover:bg-[#FDFDFC] hover:text-black transition-all duration-300"
+                >
+                  Register
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
-
-
-
-
-
-
-
-
-
-
+    <!-- main section start  -->
     <main></main>
     <footer></footer>
-</body>
+  </body>
 </html>
