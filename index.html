@@ -13,81 +13,112 @@
     <link rel="stylesheet" href="style.css" />
     <title>Assignment 3</title>
   </head>
-  <body class="bg-[#FDFDFC] sora_font">
-    <!-- header section start  -->
-    <header
-      class="w-full fixed z-50 py-[12px] lg:py-[24px] border-b border-[#179800] lg:border-none"
-    >
-      <section class="container mx-auto px-4">
-        <div class="flex items-center justify-between">
-          <!--  header logo  -->
-          <div>
-            <a href="/" class="hidden lg:block">
-              <img src="./c2-assets/logo-header.png" alt="header logo" />
-            </a>
-            <a href="/" class="lg:hidden block">
-              <img src="./c2-assets/logo_small.png" alt="header logo" />
-            </a>
-          </div>
-          <!-- header menu  -->
-          <div class="flex items-center gap-[111px]">
-            <div class="hidden lg:block">
-              <div class="flex items-center gap-14">
-                <a
-                  href="#"
-                  class="text-[20px] hover:text-[#179800] transition-all duration-200"
-                  >Product</a
-                >
-                <a
-                  href="#"
-                  class="text-[20px] hover:text-[#179800] transition-all duration-200"
-                  >Services</a
-                >
-                <a
-                  href="#"
-                  class="text-[20px] hover:text-[#179800] transition-all duration-200"
-                  >Contact Us</a
-                >
-              </div>
+  <body class="sora_font">
+    <main class="z-[-5] bg-linear-to-b from-white to-[#EFEBE3]">
+      <!-- header section start  -->
+      <header
+        class="bg-white w-full fixed z-10 py-[12px] lg:py-[24px] border-b border-[#179800] lg:border-none"
+      >
+        <section class="container mx-auto px-4">
+          <div class="flex items-center justify-between">
+            <!--  header logo  -->
+            <div>
+              <a href="/" class="hidden lg:block">
+                <img src="./c2-assets/logo-header.png" alt="header logo" />
+              </a>
+              <a href="/" class="lg:hidden block">
+                <img src="./c2-assets/logo_small.png" alt="header logo" />
+              </a>
             </div>
+            <!-- header menu  -->
+            <div class="flex items-center gap-[111px]">
+              <div class="hidden lg:block">
+                <div class="flex items-center gap-14">
+                  <a
+                    href="#"
+                    class="text-[20px] hover:text-[#179800] transition-all duration-200"
+                    >Product</a
+                  >
+                  <a
+                    href="#"
+                    class="text-[20px] hover:text-[#179800] transition-all duration-200"
+                    >Services</a
+                  >
+                  <a
+                    href="#"
+                    class="text-[20px] hover:text-[#179800] transition-all duration-200"
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
 
-            <!-- header menu icon for small device -->
-            <div class="block lg:hidden">
-              <i class="fa-solid fa-bars text-2xl text-[#179800]"></i>
-            </div>
-            <!-- header button and icons for large device  -->
-            <div class="hidden lg:block">
-              <div class="flex items-center gap-[24px]">
-                <!-- icons  -->
+              <!-- header menu icon for small device -->
+              <div class="block lg:hidden">
+                <i
+                  class="fa-solid fa-bars text-2xl text-[#179800] cursor-pointer"
+                ></i>
+              </div>
+              <!-- header button and icons for large device  -->
+              <div class="hidden lg:block">
                 <div class="flex items-center gap-[24px]">
-                  <i
-                    class="fa-solid fa-magnifying-glass text-2xl cursor-pointer hover:text-[#179800] transition-all duration-200"
-                  ></i>
-                  <i
-                    class="fa-solid fa-cart-shopping text-2xl cursor-pointer hover:text-[#179800] transition-all duration-200"
-                  ></i>
-                </div>
-                <!-- button  -->
-                <div class="flex items-center gap-[12px]">
-                  <button
-                    class="border-1 border-[#179800] px-[30px] py-[10px] text-[20px] rounded-[8px] cursor-pointer hover:text-white hover:bg-[#179800] transition-all duration-300"
-                  >
-                    Login
-                  </button>
-                  <button
-                    class="border-1 border-[#179800] px-[30px] py-[10px] text-[20px] rounded-[8px] cursor-pointer text-white bg-[#179800] hover:bg-[#FDFDFC] hover:text-black transition-all duration-300"
-                  >
-                    Register
-                  </button>
+                  <!-- icons  -->
+                  <div class="flex items-center gap-[24px]">
+                    <i
+                      class="fa-solid fa-magnifying-glass text-2xl cursor-pointer hover:text-[#179800] transition-all duration-200"
+                    ></i>
+                    <i
+                      class="fa-solid fa-cart-shopping text-2xl cursor-pointer hover:text-[#179800] transition-all duration-200"
+                    ></i>
+                  </div>
+                  <!-- button  -->
+                  <div class="flex items-center gap-[12px]">
+                    <button
+                      class="border-1 border-[#179800] px-[30px] py-[10px] text-[20px] rounded-[8px] cursor-pointer hover:text-white hover:bg-[#179800] transition-all duration-300"
+                    >
+                      Login
+                    </button>
+                    <button
+                      class="border-1 border-[#179800] px-[30px] py-[10px] text-[20px] rounded-[8px] cursor-pointer text-white bg-[#179800] hover:bg-[#FDFDFC] hover:text-black transition-all duration-300"
+                    >
+                      Register
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+      </header>
+      <!-- header section end -->
+
+      <!-- banner section start  -->
+      <div class="container mx-auto px-4 pt-20 lg:pt-40">
+        <div class="pt-[48px]">
+          <!-- banner text  -->
+          <h1 class="font-semibold text-[32px] lg:text-[56px] text-center">
+            Freshness
+            <span class="text-[#179800]"
+              >You Can <br />
+              Count</span
+            >
+            On, Prices You’ll Love!
+          </h1>
+          <p
+            class="my-[16px] lg:my-[32px] font-light text-[16px] lg:text-[20px] text-center lg:mx-[350px]"
+          >
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry staples, we’ve got you covered every day!
+          </p>
+          <!-- banner image  -->
+          <div class="flex justify-center">
+            <img src="./c2-assets/hero-vegetables.png" alt="banner_image" />
           </div>
         </div>
-      </section>
-    </header>
+      </div>
+      <!-- banner section end  -->
+    </main>
     <!-- main section start  -->
-    <main></main>
+
     <footer></footer>
   </body>
 </html>
